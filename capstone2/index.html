@@ -3,39 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>My Resume</title>
 </head>
 <body>
-    <h1>Taylor Witt</h1>
-    <p>Email - twitt23@gmail.com</p>
+<div class="px-4 py-5 text-center header-bg">
+    <img class="d-block mx-auto mb-4" src="./assets/images/headshot.png" alt="" width="150" height="150">
+    <h1 class="display-5 fw-bold text-body-emphasis">Taylor Witt</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4 text-body-emphasis">Experienced IT professional with a wide skillset. Eager to learn and ensure customer satisfaction.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="./public/contact.html" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Contact Me</a>            
+        </div>
+    </div>
+</div>
 
-    <img src="./assets/images/headshot.png" height="100" alt="Headshot of Taylor Witt">
+<div class="container about-bg" id="hanging-icons">
+    <h2 class="pb-2 border-bottom about-bg">About</h2>
+    <div class="row g-4 py-4 row-cols-1 row-cols-lg-3 about-bg">
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pc-display icon" viewBox="0 0 16 16">
+                    <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2 text-body-emphasis">Work</h3>
+                <p>Get to know my work, and my experiences in the IT world.</p>
+                <a href="./public/work.html" class="btn btn-dark">Work</a>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code-slash icon" viewBox="0 0 16 16">
+                    <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2 text-body-emphasis">Skills</h3>
+                <p>Check out the list of my skills and proficiencies.</p>
+                <a href="./public/skills.html" class="btn btn-dark">Skills</a>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-patch-check-fill icon" viewBox="0 0 16 16">
+                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                </svg>
+            </div>
+            <div>
+                <h3 class="fs-2 text-body-emphasis">Certifications</h3>
+                <p>Here are my certifications and certs I am currently working on.</p>
+                <a href="./public/certs.html" class="btn btn-dark">Certifications</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <h3>Summary</h3>
-        <p>Experienced IT professional with a wide skillset. Eager to learn and ensure customer satisfaction.</p>
-    <h3>Education</h3>
-        <ul>
-            <li>Associate in Network Management, Chattanooga State</li>
-        </ul>
-    <h3>Work Experience</h3>
-        <ul>
-            <li>Fenix24, LLC - 2014-Present.
-                <ul>
-                    <li>Infrastructure Engineer from 2014-2022.</li>
-                        <ul>
-                            <li>Implemented and maintained Mimecast services for over 50 customers</li>
-                            <li>Managed and upgraded Exchange servers</li>
-                            <li>Used N-Central to monitor and maintain customer environments and customer patching</li>
-                        </ul>
-                    <li>Data Protection Engineer 3 2022-Present.</li>
-                        <ul>
-                            <li>Implemented Cohesity Data Protect for over 15 customers</li>
-                            <li>Maintained customer backup environments and ensured SLAs were met</li>
-                            <li>Implemented backup immutability and anti-ransomeware to ensure recoverability</li>
-                        </ul>
-                </ul>
-            </li>
-        </ul>
+
+
     <h3>Skills</h3>
         <ul>
             <li>Microsoft Exchange</li>
@@ -55,13 +82,16 @@
             <li>Mimecast Certified Specialist - 2021</li>
             <li>Microsoft Certified: Azure Fundamentals - 2024</li>
         </ul>
-    <h3>Other</h3>
-        <ul>
-            <li><a href="./public/hobbies.html">My hobbies</a></li>
-            <li><a href="./public/contact.html">Contact Me</a></li>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Work</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Skills</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Hobbies</a></li>
         </ul>
-    <footer>
-        <p>© 2025 Taylor Witt</p>
+        <p class="text-center text-body-secondary">© 2025 Taylor Witt</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
