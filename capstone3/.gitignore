@@ -29,3 +29,4 @@ yarn-error.log*
 .eslintcache
 .nyc_output
 coverage/
+assets/

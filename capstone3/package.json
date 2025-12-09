@@ -2,6 +2,7 @@
   "name": "capstone3",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
+    "body-parser": "^2.2.1",
     "ejs": "^3.1.10",
     "express": "^5.2.1"
   }
