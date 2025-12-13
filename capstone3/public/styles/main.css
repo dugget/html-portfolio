@@ -22,3 +22,30 @@
     justify-content: center;
     text-align: center;
 }
+
+.postStyle{
+    box-shadow: 3px 3px 2px 3px #f5faff;
+    margin-bottom: 2px;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.posts{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
