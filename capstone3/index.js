@@ -57,6 +57,61 @@ app.get('/posts/:postID', (req, res) => {
     }
 })
 
+app.get('/posts/edit/:postID', (req, res) => {
+    let postTitle = req.params.postID;
+    let postAuthor = "";
+    let postBody = "";
+
+    const post = posts.find(post => post.title.toLowerCase() == postTitle.toLowerCase());
+    if (post) {
+        const postTitle = post.title;
+        const postAuthor = post.author;
+        const postBody = post.body;
+
+        if (postTitle.toLowerCase() == postTitle.toLowerCase()) {
+            res.render(
+                'edit.ejs',
+                {
+                    title: postTitle,
+                    author: postAuthor,
+                    body: postBody,
+                }
+            )
+        }
+    }
+})
+
+app.post('/posts/edit/:postID', (req, res) => {
+    const postID = req.params.postID;
+    const newTitle = req.body.title;
+    const newBody = req.body.body;
+    
+    // Find the post index
+    const index = posts.findIndex(post => post.title.toLowerCase() == postID.toLowerCase());
+    
+    if (index > -1) {
+        // Update the post
+        posts[index].title = newTitle;
+        posts[index].body = newBody;
+        // Redirect to the updated post page
+        res.redirect(`/posts/${newTitle}`);
+    } else {
+        // Handle error if post not found, for now redirect home or show error
+        res.redirect("/");
+    }
+})
+app.post('/delete/:postTitle', (req, res) => {
+    const postTitle = req.params.postTitle;
+
+    if (postTitle) {
+        const index = posts.findIndex(post => post.title.toLowerCase() == postTitle.toLowerCase());
+        if (index > -1) {
+            posts.splice(index, 1);
+        }
+    }
+    res.redirect("/");
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

@@ -2,4 +2,12 @@
 <h1><%= title %></h1>
 <p><%= author %></p>
 <p><%= body %></p>
+
+<button id="homeBtn">Home</button>
+
+<script>
+    document.getElementById("homeBtn").addEventListener("click", () => {
+        window.location.href = "/";
+    });
+</script>
 <% include('partials/footer.ejs') %>

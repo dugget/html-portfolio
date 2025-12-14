@@ -9,6 +9,10 @@
             <p><%= post.body.substring(0, 100) %>...</p>
             <p>By <%= post.author %></p>
             <a href="/posts/<%= post.title %>">Read More</a>
+            <form action="/delete/<%= post.title %>" method="POST">
+                <button type="submit" class="btn btn-danger deletePostBtn">Delete Post</button>
+            </form>
+            <a href="/posts/edit/<%= post.title %>" class="btn btn-primary editPostBtn">Edit Post</a>
         </div>
     <% }) %>
 </div>

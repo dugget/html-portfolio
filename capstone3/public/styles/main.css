@@ -49,3 +49,27 @@
     justify-content: center;
     text-align: center;
 }
+
+.deletePostBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+}
+
+.editPostBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: green;
+}
