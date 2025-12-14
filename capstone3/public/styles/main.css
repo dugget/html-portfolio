@@ -73,3 +73,35 @@
     text-align: center;
     background-color: green;
 }
+
+.form-group{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.createPostHeading {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.btn-primary {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#postBody {
+    width: 50% ;
+    height: 100px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

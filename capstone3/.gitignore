@@ -30,3 +30,4 @@ yarn-error.log*
 .nyc_output
 coverage/
 assets/
+WARP.md

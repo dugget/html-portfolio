@@ -1,22 +1,22 @@
-<% include ('partials/header.ejs') %>
-    <h1>Create Post</h1>
+<%- include ('partials/header.ejs') %>
+    <h1 class="createPostHeading">Create Post</h1>
     <form method="POST" action="/create">
-       <div class="form-group">
-        <label for="author">Author</label>
+       <div class="form-group mb-3">
+        <label for="author" class="form-label">Author</label>
         <input type="text" name="author" id="postAuthor" placeholder="Enter author name" required>
        </div> 
 
-       <div class="form-group">
-        <label for="title">Title</label>
+       <div class="form-group mb-3">
+        <label for="title" class="form-label">Title</label>
         <input type="text" name="title" id="postTitle" placeholder="Enter title" required>
        </div>
 
-       <div class="form-group">
-        <label for="body">Body</label>
-        <textarea name="body" id="postBody" placeholder="Enter body" required></textarea>
+       <div class="form-group mb-3">
+        <label for="body" class="form-label">Body</label>
+        <textarea name="body" id="postBody" placeholder="Enter body" rows="10" columns="30" required></textarea>
        </div>
 
-       <button type="submit" class="btn btn-default">Publish</button>
+       <button type="submit" class="btn btn-primary">Publish</button>
     
     </form>
 
@@ -25,4 +25,4 @@
         window.location.href = "/create";
     })
 </script>
-<% include ('partials/footer.ejs') %>
+<%- include ('partials/footer.ejs') %>
