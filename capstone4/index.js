@@ -44,7 +44,7 @@ app.get("/auth/strava/callback", async (req, res) => {
       bikes: athlete.bikes || [],
       shoes: athlete.shoes || [],
     };
-    return res.send(gear);
+    res.render("gear.ejs", { gear: gear });
   } catch (error) {
     console.error(error.response?.data);
     return res.status(500).send("Authentication failed");
